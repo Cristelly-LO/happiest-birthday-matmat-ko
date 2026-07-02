@@ -1,0 +1,1 @@
+let i=0;const s=document.getElementById('start'),c=document.getElementById('content'),n=document.getElementById('num'),r=document.getElementById('reason');function show(){n.textContent=`Reason ${i+1} / ${reasons.length}`;r.textContent=reasons[i];}s.onclick=()=>{c.hidden=false;s.hidden=true;show();};document.getElementById('next').onclick=()=>{i=(i+1)%reasons.length;show();};
